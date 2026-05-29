@@ -45,7 +45,7 @@ MSDR_FEATURES  = BASE_FEATURES
 
 # ── 2SLS: instrumenter og endogen variabel ──────────────────────────────────
 IV_ENDOG       = "cons_NO4"
-IV_INSTRUMENTS = ["temp_NO4", "precip_NO4"]
+IV_INSTRUMENTS = ["temp_NO4"]
 IV_EXOG        = [f for f in MODEL_FEATURES if f != IV_ENDOG]
 TSLS_FEATURES  = MODEL_FEATURES
 
