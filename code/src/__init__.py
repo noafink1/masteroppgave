@@ -12,6 +12,15 @@ from .features import (get_season, add_calendar_features,
 from .regime import classify_regime, near_boundary_sys, regime_group
 from .evaluation import eval_metrics, eval_segment, demand_level
 from .scenario import build_scenario, fill_group
+from .uncertainty import (
+    block_bootstrap_day_index,
+    bootstrap_ci,
+    bootstrap_iso_share_delta,
+    bootstrap_p90_delta,
+    bootstrap_extreme_share_delta,
+    bootstrap_total_effect,
+    p90_sensitivity,
+)
 from .model_training import (
     load_prepared_iso_data,
     prepare_iso_data,
